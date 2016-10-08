@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta http-equiv="Content-Type" charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand"/>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/toastr/toastr.css" />
+  <!-- endbower -->
+  <link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- build:css(.tmp) styles/main.css -->
+  <!-- endbuild -->
+</head>
+<body ng-app="avimetApp">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-controller="RouterController as route" class="index">
+  <div class="ui menu" style="height: 55px;background: #008bb1">
+    <div class="menu-container" style="width: 1200px;margin: 0 auto;">
+        <div class="ui grid" style="height: 100%;margin: 0 auto;">
+          <div class="four wide column" >
+            <a style="color: #ffffff;height: 53px !important" ></a>
+            <a style="color: #ffffff;height: 53px !important">/</a>
+          </div>
+          <div class="four wide column">
+            <a style="color: #ffffff;height: 53px !important">
+              UTC 12:30Z
+            </a>
+          </div>
+          <div class="four wide column">
+
+          </div>
+          <div class="four wide column">
+            <a style="color: #ffffff;height: 53px !important">
+              北京时间 2016-10-04 20:30:08
+            </a>
+            </div>
+      </div>
+      <div class="right item fr">
+        <div class="item" style="margin-right: 2em;">
+          <div class="two items">
+          </div>
+          <div class="item" style="font-size: 12px;">
+            <span ng-bind="profile.realName"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-content" style="overflow: hidden;margin: 0 auto;height: 900px">
+    <div class="left-menu" >
+      <div class="ui accordion left-menu-height" style="background: rgb(232,232,232);">
+        <div class="title-home home">
+          <a ng-click="clickCss('home')" ng-link="home">
+            <i class="home icon"></i>
+            菜单1&nbsp;&nbsp;
+          </a>
+        </div>
+        <div class="title-home news">
+          <a ng-click="clickCss('news')" ng-link="news">
+            <i class="file text icon"></i>
+            菜单2
+          </a>
+        </div>
+    </div>
+    </div>
+  <div class="right-content right-content-position">
+      <div style="margin-top: 1em;margin-bottom: 1em;width: 1550px;height: 600px">
+        <div ng-viewport></div>
+      </div>
+  </div>
+
+</div>
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-new-router/dist/router.es5.js"></script>
+  <script src="bower_components/semantic/dist/semantic.js"></script>
+  <script src="bower_components/toastr/toastr.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+
+  <!-- endbuild -->
+
+
+</body>
+</html>

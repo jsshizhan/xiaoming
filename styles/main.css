@@ -46,6 +46,20 @@ html {
   height: 60px
 }
 
+.height1.column{
+  height: 150px
+}
+
+.height2.column{
+  height: 290px
+}
+.height3.column{
+  height: 220px
+}
+.height4.column{
+  height: 160px
+}
+
 
 
 input.text {

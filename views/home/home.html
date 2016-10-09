@@ -1,5 +1,5 @@
-<div ng-controller="homeController">
-	<div class="ui grid mg-0">
+<div ng-controller="homeController" >
+	<div class="ui grid mg-0" >
 		<div class="high four wide column pd-0"  >
 			<div class="ui top attached button">07</div>
 		</div>
@@ -14,22 +14,70 @@
 			    <a class="item active" data-tab="REPORT">REPORT</a>
 			    <a class="item" data-tab="SYSTEM">SYSTEM</a>
 			  </div>
-			  <div class="ui active tab segment" data-tab="REPORT">
+			  <div class="ui active tab segment" style="background-color:rgb(184,194,204)" data-tab="REPORT">
 			    4
 			  </div>
-			  <div class="ui tab segment" data-tab="SYSTEM" style="height: 320px">
+			  <div class="ui tab segment" style="background-color:rgb(184,194,204)" data-tab="SYSTEM" style="height: 340px">
 			    System Automatic data:
-				<div class="ui form" >
+			    
+				<form class="ui form " style="margin-top:15px">
 				  <div class="inline fields" >
-				    <label >Pre.VIS</label>
-				    <div class="field">
-				    	<input type="text" style="height:20px;width: 14em;margin-left: 5px">
+				    <label style="width: 100px">Pre.VIS</label>
+				    <div class="field" >
+				    	<input type="text" style="height:20px;width: 250px;margin-left: 5px">
 				    </div>
 				  </div>
 				  <div class="inline fields">
-				    <label >MNM.VIS</label>
+				    <label style="width:100px">MNM.VIS</label>
+				    <div class="field" >
+				    	<input type="text" style="height:20px;width: 250px;margin-left: 5px">
+				    </div>
+				  </div>
+				</form>
+
+				<div class="line"></div>
+				<div class="ui form" style="margin-top:15px">
+				  <div class="inline fields" >
+				    <label style="width:100px">w'w'</label>
 				    <div class="field">
-				    	<input type="text" style="height:20px;width: 14em;margin-left: 5px">
+				    	<input type="text" style="height:20px;width: 250px;margin-left: 5px">
+				    </div>
+				  </div>
+				  <div class="inline fields">
+				    <label style="width:100px">REw'w'</label>
+				    <div class="field">
+				    	<input type="text" style="height:20px;width: 250px;margin-left: 5px">
+				    </div>
+				  </div>
+				</div>
+				<div class="line"></div>
+				<div style="text-align:center">AREORDOME CLOUD</div>
+				<div class="ui form">
+				  <div class="inline fields">
+				    <label>3rd</label>
+				    <div class="field" >
+				      <input type="text" style="width:120px;height:20px;">
+				    </div>
+				    <div class="field">
+				      <input type="text" style="width:190px;height:20px;">
+				    </div>
+				  </div>
+				  <div class="inline fields">
+				    <label>2nd</label>
+				    <div class="field" >
+				      <input type="text" style="width:120px;height:20px;">
+				    </div>
+				    <div class="field">
+				      <input type="text" style="width:190px;height:20px;">
+				    </div>
+				  </div>
+				  <div class="inline fields">
+				    <label>1st</label>
+				    <div class="field" >
+				      <input type="text" style="width:120px;height:20px;">
+				    </div>
+				    <div class="field">
+				      <input type="text" style="width:190px;height:20px;">
 				    </div>
 				  </div>
 				</div>
@@ -37,27 +85,148 @@
 		</div>
 	</div>
 	<div class="ui grid mg-0">
-		<div class="middle twelve wide column pd-0">
-			<div class="ui top button"></div>
+		<div class="middle twelve wide column pd-0" >
+			<div class="wide-line0 " ><div class="short-line-left"></div><div class="short-line-left"></div><div class="short-line-left"></div><div class="short-line-left"></div></div>
+			<div class="wide-line1 " ><i class="big caret left icon" style="margin-left:75px"></i>T01</div>
+			<div class="wide-line2 " >
+				<div style="color:#fff;float:left;width:20px;margin-left:180px;font-size:20px">25</div>
+				<i class="big caret left icon" style="margin-left:75px"></i>T01
+				<div style="float:right;margin-top:-28px;margin-right:2px">
+					<div class="short-line-right"></div>
+					<div class="short-line-right"></div>
+					<div class="short-line-right"></div>
+					<div class="short-line-right"></div>
+				</div>
+			</div>
 		</div>
-		<div class="middle four wide column pd-0">
-			<div class="ui top button"></div>
+		<div class="middle four wide column pd-0" >
+			<div style="margin-top:35px">
+				<div style="float:left;margin-top:15px;margin-left:100px">QNH</div>
+				<div style="float:right;height:60px;width:240px;background-color:#fff">
+					<label style="font-size:40px;color:rgb(62,111,188);margin-left:50px;line-height:60px">1025</label>
+					<label style="float:right;margin-right:5px">hPa</label>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="ui grid mg-0">
-		<div class="middle twelve wide column pd-0">
-			<div class="ui top button"></div>
+		<div class="middle larger left twelve wide column pd-0">
+			<div class="ui form">
+				<div class="three fields">
+					<div class="field">
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text" value="2000">
+					  </div>
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					  </div>
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					  </div>
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					  </div>
+					</div>
+					<div class="field">
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					  </div>
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					  </div>
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text"> 
+					  </div>
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					  </div>
+					</div>
+					<div class="field">
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					  </div>
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					  </div>
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					  </div>
+					  <div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					  </div>
+					</div>
+			  	</div>
+			</div>
 		</div>
-		<div class="middle four wide column pd-0">
-			<div class="ui top button"></div>
+		<div class="middle larger four wide column pd-0">
+			 <div class="ui secondary menu">
+			    <a class="item active" data-tab="ONE">RWY 25</a>
+			    <a class="item" data-tab="SECOND">RWY 07</a>
+			  </div>
+			  <div class="ui active tab segment" style="background-color:rgb(184,194,204);height: 340px" data-tab="ONE">
+			    	<div class="inline field" style="margin-left:150px">
+					    <label>CLD</label>
+					    <input type="text" >
+					</div>
+					<div class="inline field" style="margin-top:5px;margin-left:150px">
+					    <label>CLD</label>
+					    <input type="text" >
+					</div>
+					<div class="inline field" style="margin-top:5px;margin-left:150px">
+					    <label>CLD</label>
+					    <input type="text" >
+					</div>
+					<div class="inline field" style="margin-top:5px;margin-left:150px">
+					    <label>CLD</label>
+					    <input type="text" >
+					</div>
+					<div class="inline field" style="margin-top:5px;margin-left:150px">
+					    <label>CLD</label>
+					    <input type="text" >
+					</div>
+			  </div>
+			  <div class="ui tab segment" style="background-color:rgb(184,194,204);height: 340px" data-tab="SECOND">
+			    FDSFDS
+			  </div>
 		</div>
 	</div>
 	<div class="ui grid mg-0">
 		<div class="shorter twelve wide column pd-0">
-			<div class="ui top button"></div>
+			<div class="ui form">
+				<div class="three fields">
+					<div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					</div>
+					<div class="inline field">
+					   
+					</div>
+					<div class="inline field">
+					    <label>CLD</label>
+					    <input type="text" class="text">
+					</div>
+				</div>
+			 </div>
 		</div>
 		<div class="shorter four wide column pd-0">
-			<div class="ui top button"></div>
+			<div class="ui form">
+				<div class="inline field" style="margin-top:5px;margin-left:150px">
+				    <label style="width:32px">CLD</label>
+				    <input type="text" style="width:152px">
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

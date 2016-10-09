@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
   min-width: 1070px;
   min-height: 688px;
-  background-color: #d9d9d9;
+  background-color: rgb(184,194,204);
 }
 
 html {
@@ -19,11 +19,14 @@ html {
   overflow-y: hidden;
   overflow-x: auto;
 }
+
+
 .mg-0{
-  margin: 0!important
+  margin: 0!important;
 }
 .pd-0{
-  padding: 3px!important
+  padding: 3px!important;
+  background-color:rgb(184,194,204)!important;
 }
 .column{
   border: 1px solid #ccc;
@@ -35,39 +38,79 @@ html {
 .middle.column{
   height: 150px
 }
+.middle.larger.column{
+  height: 200px;
+  font-size: 20px
+}
 .shorter.column{
   height: 60px
 }
 
 
-/*对于下拉框的处理*/
-.number-type .ui.fluid.dropdown {
-  min-width: 3em !important;
+
+input.text {
+  text-align:center;
+  background-color: rgb(221,225,236)!important;
 }
 
-.commonBoxscroll {
-  width: 100%;
-  overflow: auto;
+.line{
+   height:1px;
+   width:350px;
+   background:#000000;
+   overflow:hidden;
 }
 
-.commonHeight {
-  height: 700px;
+.wide-line0{
+  margin-left: 20px;
+  margin-top: 50px;
+  height:30px;
+  width:420px;
+  background-color:rgb(125,146,163);
+  float:left;
 }
 
-/*index top menu*/
-.top-menu-img {
-  max-width: 40px;
-  width: 40px;
-  height: 40px;
-  display: block;
+.wide-line1{
+  margin-left:5px;
+  margin-top: 50px;
+  height:30px;
+  width:210px;
+  background-color:rgb(125,146,163);
+  float:left;
 }
 
-/*index top menu*/
-.top-menu-img {
-  max-width: 40px;
-  width: 40px;
-  height: 40px;
-  display: block;
+.wide-line2{
+  margin-left:5px;
+  margin-top: 50px;
+  height:30px;
+  width:487px;
+  background-color:rgb(125,146,163);
+  float:left;
+}
+
+.short-line-left{
+  margin-left: 2px;
+  margin-top: 2px;
+  width:20px;
+  height: 5px;
+  background-color:#FFFFFF; 
+}
+
+.short-line-right{
+  margin-left: 450px;
+  margin-top: 2px;
+  width:20px;
+  height: 5px;
+  background-color:#FFFFFF; 
+}
+
+
+.block-white{
+  width:20px;
+  height:20px!important;
+  margin-top: 2px;
+  background-color:#FFFFFF;
+  float:right; 
+  margin-right: 0px;
 }
 
 .left-menu {

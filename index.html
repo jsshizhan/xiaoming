@@ -27,50 +27,31 @@
 
 <div ng-controller="RouterController as route" class="index">
   <div class="ui menu" style="height: 55px;background: #008bb1">
-    <div class="menu-container" style="width: 1200px;margin: 0 auto;">
-        <div class="ui grid" style="height: 100%;margin: 0 auto;">
-          <div class="four wide column" >
-            <a style="color: #ffffff;height: 53px !important" ></a>
-            <a style="color: #ffffff;height: 53px !important">/</a>
-          </div>
-          <div class="four wide column">
-            <a style="color: #ffffff;height: 53px !important">
-              UTC 12:30Z
-            </a>
-          </div>
-          <div class="four wide column">
-
-          </div>
-          <div class="four wide column">
-            <a style="color: #ffffff;height: 53px !important">
-              北京时间 2016-10-04 20:30:08
-            </a>
-            </div>
-      </div>
-      <div class="right item fr">
-        <div class="item" style="margin-right: 2em;">
-          <div class="two items">
-          </div>
-          <div class="item" style="font-size: 12px;">
-            <span ng-bind="profile.realName"></span>
-          </div>
-        </div>
-      </div>
+    <div class="menu-container" style="width: 2000px">
+        <label style="font-size: 24px;color: white;line-height: 50px;margin-left: 1px;">VAISALA</label>
+        <span style="margin-left:10px;color: white;height: 100px;width: 100px;word-break: break-all">/ AviMet 自动气象观测系统
+        43 54 26 N  87 28 27 E</span>
+        <label style="margin-left: 50px;font-size: 20px;color: white;line-height: 60px">UTC 12:30Z</label>
+        <input style="margin-left: 100px;padding-top:10px;width: 80px;height: 50px;background-color: #ffffff;text-align: center" value="QNH"/>
+        <input style="padding-top:10px;width: 350px;height: 50px;;text-align: center;color: rgb(91,150,206);font-size: 20px" value="1025.02"/>
+          <input style="margin-left: 1px;padding-top:10px;width: 80px;height: 50px;background-color: #ffffff;text-align: center" value="hPa"/>
+          <label style="color: white;margin-left: 20px">北京时间：<span my-current-time="format"></span></label>
+      
     </div>
   </div>
   <div class="main-content" style="overflow: hidden;margin: 0 auto;height: 900px">
     <div class="left-menu" >
-      <div class="ui accordion left-menu-height" style="background: rgb(232,232,232);">
-        <div class="title-home home">
+      <div class="ui accordion " >
+        <div class="title-home home" style="background: rgb(232,232,232);">
           <a ng-click="clickCss('home')" ng-link="home">
             <i class="home icon"></i>
-            菜单1&nbsp;&nbsp;
+            <label style="color:black">菜单1&nbsp;&nbsp;</label>
           </a>
         </div>
-        <div class="title-home news">
+        <div class="title-home news" style="background: rgb(232,232,232);">
           <a ng-click="clickCss('news')" ng-link="news">
             <i class="file text icon"></i>
-            菜单2
+            <label style="color:black">菜单2</label>
           </a>
         </div>
     </div>
@@ -81,8 +62,10 @@
       </div>
   </div>
 
-</div>
 
+
+</div>
+  <div style="width:10000px;height:50px;background-color: #fff"></div>
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -97,6 +80,7 @@
 
   <!-- build:js({.tmp,app}) scripts/scripts.js -->
   <script src="scripts/app.js"></script>
+  <script src="scripts/directives/nowTime/nowTime.js"></script>
  <script src="views/home/home.js"></script>
  <script src="views/news/news.js"></script>
   <!-- endbuild -->

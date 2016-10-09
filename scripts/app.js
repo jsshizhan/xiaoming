@@ -40,6 +40,7 @@ app.controller('RouterController', function ($router,$scope,$location,$resource,
   }
 
 
+
 });
 
 app.config(function ($componentLoaderProvider,$httpProvider) {

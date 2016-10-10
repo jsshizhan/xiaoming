@@ -18,7 +18,8 @@ var app = angular
 app.controller('RouterController', function ($router,$scope,$location,$resource,$http) {
   $router.config([
     {path: '/home', component: 'home'},
-    {path: '/news', component: 'news'}
+    {path: '/news', component: 'news'},
+    {path: '/', redirectTo: '/home'}
   ]);
 
   $scope._path =  $location;

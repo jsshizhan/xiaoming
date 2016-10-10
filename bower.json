@@ -1,0 +1,30 @@
+{
+  "name": "xiaoming",
+  "homepage": "index.html",
+  "authors": [
+    "jsshizhan <1269174773@qq.com>"
+  ],
+  "description": "css",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "test"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-new-router": "~0.5.3",
+    "angular-route": "~1.5.8",
+    "angular-resource": "~1.5.8",
+    "angular": "~1.5.8",
+    "jquery": "~3.1.1",
+    "toastr": "~2.1.3",
+    "semantic": "~2.2.4"
+  }
+}
